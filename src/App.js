@@ -3,7 +3,7 @@ import "./App.css";
 function App() {
   return (
     <div>
-      <h1>Hello Mfs</h1>
+      <h1>Set Up Environment</h1>
     </div>
   );
 }
