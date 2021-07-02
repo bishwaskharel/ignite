@@ -3,7 +3,7 @@ import "./App.css";
 function App() {
   return (
     <div>
-      <h1>Set Up Environment</h1>
+      <h1>K vairacha k mai bujira chaina</h1>
     </div>
   );
 }
