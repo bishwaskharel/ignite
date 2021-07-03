@@ -25,10 +25,14 @@ const currentMonth = getCurrentMonth();
 const currentDay = getCurrentDay();
 const currentDate = `${currentYear}-${currentMonth}-${currentDay}`;
 const lastYear = `${currentYear - 1}-${currentMonth}-${currentDay}`;
-// const nextYear = `${currentYear + 1}-${currentMonth}-${currentDay}`;
+const nextYear = `${currentYear + 1}-${currentMonth}-${currentDay}`;
 
 // Popular Games
 
-const popular_games = `&dates=${lastYear},${currentDate}&ordering=-rating&page-size=10`;
+const popular_games = `&dates=${lastYear},${currentDate}&ordering=-rating&page_size=10`;
+const upcoming_games = `&dates=${currentYear},${nextYear}&ordering=-added&page_size=10`;
+const newGames = `&dates=${lastYear},${currentYear}&ordering=-released&page_size=10`;
+
 export const popularGamesURL = () => `${base_url}${popular_games}`;
-console.log(popularGamesURL());
+export const upcomingGamesURL = () => `${base_url}${upcoming_games}`;
+export const newGamesURL = () => `${base_url}${newGames}`;
