@@ -29,7 +29,9 @@ const Home = () => {
             key={game.id}
           />
         ))}
-        {/* <h2>Popular Game</h2>
+      </Games>
+      <h2>Popular Game</h2>
+      <Games>
         {popular.map((game) => (
           <Game
             name={game.name}
@@ -39,7 +41,9 @@ const Home = () => {
             key={game.id}
           />
         ))}
-        <h2>New Game</h2>
+      </Games>
+      <h2>New Game</h2>
+      <Games>
         {newGames.map((game) => (
           <Game
             name={game.name}
@@ -48,7 +52,7 @@ const Home = () => {
             image={game.background_image}
             key={game.id}
           />
-        ))} */}
+        ))}
       </Games>
     </GameList>
   );
